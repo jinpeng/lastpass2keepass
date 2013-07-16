@@ -62,7 +62,7 @@ f.close() # Close the read file.
 
 w.close() # reuse same file - stringIO isn't working
 
-w = open(outputFile, "r") # open for reading - windows problems with reader on stringIO
+w = open(outputFile, "rU") # open for reading - windows problems with reader on stringIO
 
 reader = csv.reader( w, delimiter=',', quotechar='"' ) # use quotechar to fix parsing
 
